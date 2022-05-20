@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
     return (
@@ -27,7 +28,7 @@ function Header(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            <div className="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+                            <div className="logo"><a href="index.html"><img src="/assets/images/logo.png" /></a></div>
                         </div>
                     </div>
                 </div>
@@ -38,13 +39,21 @@ function Header(props) {
                 <div className="container">
                     <div className="containt_main">
                         <div id="mySidenav" className="sidenav">
-                            <a href="javascript:void(0)" className="closebtn" onclick="closeNav()">×</a>
-                            <a href="index.html">Home</a>
-                            <a href="fashion.html">Fashion</a>
-                            <a href="electronic.html">Electronic</a>
-                            <a href="jewellery.html">Jewellery</a>
+                            <a href="javascript:void(0)" className="closebtn" onClick={"closeNav()"}>×</a>
+                            {/* <a href="index.html">Home</a> */}
+                            <NavLink to={"/"}>Home</NavLink>
+
+                            {/* <a href="fashion.html">Fashion</a> */}
+                            <NavLink to={"/fashion"}>Fashion</NavLink>
+
+                            {/* <a href="electronic.html">Electronic</a> */}
+                            <NavLink to={"/electronic"}>Electronic</NavLink>
+
+                            {/* <a href="jewellery.html">Jewellery</a> */}
+                            <NavLink to={"/jewellery"}>Jewellery</NavLink>
+
                         </div>
-                        <span className="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png" /></span>
+                        <span className="toggle_icon" onClick={"openNav()"}><img src="/assets/images/toggle-icon.png" /></span>
                         <div className="dropdown">
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
                             </button>
@@ -68,11 +77,11 @@ function Header(props) {
                         <div className="header_box">
                             <div className="lang_box ">
                                 <a href="#" title="Language" className="nav-link" data-toggle="dropdown" aria-expanded="true">
-                                    <img src="images/flag-uk.png" alt="flag" className="mr-2 " title="United Kingdom" /> English <i className="fa fa-angle-down ml-2" aria-hidden="true" />
+                                    <img src="/assets/images/flag-uk.png" alt="flag" className="mr-2 " title="United Kingdom" /> English <i className="fa fa-angle-down ml-2" aria-hidden="true" />
                                 </a>
                                 <div className="dropdown-menu ">
                                     <a href="#" className="dropdown-item">
-                                        <img src="images/flag-france.png" className="mr-2" alt="flag" />
+                                        <img src="/assets/images/flag-france.png" className="mr-2" alt="flag" />
                                         French
                                     </a>
                                 </div>

@@ -1,6 +1,15 @@
 import React from 'react';
 
 function Electronic(props) {
+    
+function openNav() {
+	document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+    
     return (
         <div className="fashion_section">
             <div id="electronic_main_slider" className="carousel slide" data-ride="carousel">
@@ -14,7 +23,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Laptop</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/laptop-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/laptop-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -25,7 +34,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Mobile</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/mobile-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/mobile-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -36,7 +45,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Computers</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/computer-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/computer-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -56,7 +65,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Laptop</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/laptop-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/laptop-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -67,7 +76,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Mobile</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/mobile-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/mobile-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -78,7 +87,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Computers</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/computer-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/computer-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -98,7 +107,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Laptop</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/laptop-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/laptop-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -109,7 +118,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Mobile</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/mobile-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/mobile-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -120,7 +129,7 @@ function Electronic(props) {
                                         <div className="box_main">
                                             <h4 className="shirt_text">Computers</h4>
                                             <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                            <div className="electronic_img"><img src="images/computer-img.png" /></div>
+                                            <div className="electronic_img"><img src="/assets/images/computer-img.png" /></div>
                                             <div className="btn_main">
                                                 <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                 <div className="seemore_bt"><a href="#">See More</a></div>
@@ -140,6 +149,8 @@ function Electronic(props) {
                 </a>
             </div>
         </div>
+
+    
 
     );
 }

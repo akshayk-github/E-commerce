@@ -15,7 +15,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Man T -shirt</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/tshirt-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/tshirt-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -26,7 +26,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Man -shirt</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/dress-shirt-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/dress-shirt-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -37,7 +37,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Woman Scart</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/women-clothes-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/women-clothes-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -57,7 +57,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Man T -shirt</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/tshirt-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/tshirt-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -68,7 +68,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Man -shirt</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/dress-shirt-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/dress-shirt-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -79,7 +79,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Woman Scart</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/women-clothes-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/women-clothes-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -99,7 +99,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Man T -shirt</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/tshirt-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/tshirt-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -110,7 +110,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Man -shirt</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/dress-shirt-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/dress-shirt-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -121,7 +121,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Woman Scart</h4>
                                                 <p className="price_text">Price  <span style={{ color: '#262626' }}>$ 30</span></p>
-                                                <div className="tshirt_img"><img src="images/women-clothes-img.png" /></div>
+                                                <div className="tshirt_img"><img src="/assets/images/women-clothes-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -155,7 +155,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Laptop</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/laptop-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/laptop-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -166,7 +166,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Mobile</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/mobile-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/mobile-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -177,7 +177,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Computers</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/computer-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/computer-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -197,7 +197,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Laptop</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/laptop-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/laptop-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -208,7 +208,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Mobile</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/mobile-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/mobile-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -219,7 +219,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Computers</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/computer-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/computer-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -239,7 +239,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Laptop</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/laptop-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/laptop-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -250,7 +250,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Mobile</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/mobile-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/mobile-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -261,7 +261,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Computers</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="electronic_img"><img src="images/computer-img.png" /></div>
+                                                <div className="electronic_img"><img src="/assets/images/computer-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -295,7 +295,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Jumkas</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/jhumka-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/jhumka-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -306,7 +306,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Necklaces</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/neklesh-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/neklesh-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -317,7 +317,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Kangans</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/kangan-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/kangan-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -337,7 +337,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Jumkas</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/jhumka-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/jhumka-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -348,7 +348,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Necklaces</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/neklesh-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/neklesh-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -359,7 +359,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Kangans</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/kangan-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/kangan-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -379,7 +379,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Jumkas</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/jhumka-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/jhumka-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -390,7 +390,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Necklaces</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/neklesh-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/neklesh-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -401,7 +401,7 @@ function Home(props) {
                                             <div className="box_main">
                                                 <h4 className="shirt_text">Kangans</h4>
                                                 <p className="price_text">Start Price  <span style={{ color: '#262626' }}>$ 100</span></p>
-                                                <div className="jewellery_img"><img src="images/kangan-img.png" /></div>
+                                                <div className="jewellery_img"><img src="/assets/images/kangan-img.png" /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                                     <div className="seemore_bt"><a href="#">See More</a></div>
