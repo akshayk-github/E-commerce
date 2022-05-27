@@ -53,7 +53,7 @@ function Header(props) {
                             <NavLink to={"/jewellery"}>Jewellery</NavLink>
 
                         </div>
-                        <span className="toggle_icon" onClick={"openNav()"}><img src="/assets/images/toggle-icon.png" /></span>
+                        <span className="toggle_icon"  onClick={openNav()}><img src="/assets/images/toggle-icon.png" /></span>
                         <div className="dropdown">
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
                             </button>
