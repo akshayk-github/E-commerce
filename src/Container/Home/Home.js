@@ -2,6 +2,7 @@ import React from 'react';
 
 function Home(props) {
     return (
+        
         <div>
             <div className="fashion_section">
                 <div id="main_slider" className="carousel slide" data-ride="carousel">

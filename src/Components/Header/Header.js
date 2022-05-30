@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 function Header(props) {
     return (
-        <div className="banner_bg_main">
+        
+        <>
+            <div className="banner_bg_main">
             {/* header top section start */}
             <div className="container">
                 <div className="header_section_top">
@@ -39,7 +41,7 @@ function Header(props) {
                 <div className="container">
                     <div className="containt_main">
                         <div id="mySidenav" className="sidenav">
-                            <a href="javascript:void(0)" className="closebtn" onClick={"closeNav()"}>×</a>
+                            <a href="javascript:void(0)" className="closebtn" >×</a>
                             {/* <a href="index.html">Home</a> */}
                             <NavLink to={"/"}>Home</NavLink>
 
@@ -52,8 +54,13 @@ function Header(props) {
                             {/* <a href="jewellery.html">Jewellery</a> */}
                             <NavLink to={"/jewellery"}>Jewellery</NavLink>
 
+                            {/* <a href="jewellery.html">Jewellery</a> */}
+                            <NavLink to={"/Login"}>Login</NavLink>
+
                         </div>
-                        <span className="toggle_icon"  onClick={openNav()}><img src="/assets/images/toggle-icon.png" /></span>
+                        <span className="toggle_icon" >
+                            <img src="/assets/images/toggle-icon.png" />
+                        </span>
                         <div className="dropdown">
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
                             </button>
@@ -143,6 +150,8 @@ function Header(props) {
                 </div>
             </div>
         </div>
+
+        </>
 
     );
 }
