@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Button, Form, FormGroup } from 'reactstrap';
+import { Button, FormGroup, Input, Label } from 'reactstrap';
 import * as yup from 'yup';
-import { Formik, useFormik } from 'formik';
+import { Form, Formik, useFormik } from 'formik';
 
 function Login(props) {
 
     const [userType, setuserType] = useState("Login");
 
-    let login = {
+    let Login = {
         email: yup.string().email("enter valid email").required("please enter email"),
         password: yup.string().required("please enter password")
     }
@@ -18,25 +18,34 @@ function Login(props) {
         password: yup.string().required("please enter password")
     }
 
-    let forgotpass = {
+    let Forgotpass = {
         email: yup.string().email("enter valid email").required("please enter email"),
     }
 
-    let initialVal;
+    let schema, initialVal;
 
-    let schema = yup.object().shape();
+    // let schema = yup.object().shape();
 
     if (userType === "Login") {
-        schema = yup.object().shape(login);
+        schema = yup.object().shape(Login);
         initialVal = {
             email: '',
             password: ''
         }
-    } else {
-        
+    } else if (userType === "Signup") {
+        schema = yup.object().shape(Signup);
+        initialVal = {
+            name: '',
+            email: '',
+            password: ''
+        }
+    } else if (userType === "Forgotpass") {
+        schema = yup.object().shape(Forgotpass);
+        initialVal = {
+            email: '',
+        }
     }
 
-    console.log(formik.errors.email);
 
     const formik = useFormik({
         initialValues: initialVal,
@@ -46,12 +55,14 @@ function Login(props) {
                 console.log('Successfully Login 👍');
             } else if (userType === 'Signup') {
                 console.log('Successfully Signup 👍');
-            } else if (userType === 'forgotPassword') {
+            } else if (userType === 'Forgotpass') {
                 console.log('Your OTP is : 852002');
             }
             // alert(JSON.stringify(values, null, 2));
         },
     });
+
+    console.log(formik.errors.email);
 
     return (
 
@@ -61,26 +72,51 @@ function Login(props) {
                     <div className="">
                         <div className="mt-5">
                             <div className="container">
-
                                 <div className="row">
                                     <div className="col-3"></div>
                                     <div className="col-6">
-                                        {
+                                        {   
+                                            userType === "Forgotpass" ?
+                                                <h1 className="fashion_taital">Forgot password</h1>
+                                            :
                                             userType === "Login" ?
                                                 <h1 className="fashion_taital">Login</h1>
                                                 :
                                                 <h1 className="fashion_taital">Signup</h1>
                                         }
-                                        <Formik values={formik}>
+                                        <Formik value={formik}>
                                             <Form onSubmit={formik.handleSubmit}>
+                                                {
+                                                    userType === "Forgotpass" ?
+                                                    <FormGroup>
+                                                            <Label htmlFor="exampleEmail">
+                                                                Email
+                                                            </Label>
+                                                            <br></br>
+                                                            <Input id="exampleEmail" className="mail_bt_contact" name="email" placeholder="with a placeholder" type="email" onChange={formik.handleChange} />
+                                                            {
+                                                                formik.errors.email ? <p>{formik.errors.email}</p>
+                                                                    :
+                                                                    null
+                                                            }
+                                                        </FormGroup>
+                                                        :
+                                                        null
+                                                }
                                                 {
                                                     userType === "Signup" ?
                                                         <FormGroup>
-                                                            <label htmlFor="exampleEmail">
+                                                            <Label htmlFor="exampleEmail">
                                                                 Name
-                                                            </label>
+                                                            </Label>
                                                             <br></br>
-                                                            <input id="exampleName" class="mail_bt_contact" name="name" placeholder="Enter Name" type="text" />
+                                                            <Input id="exampleName" className="mail_bt_contact" name="name" placeholder="Enter Name" type="text"
+                                                                onChange={formik.handleChange} />
+                                                            {
+                                                                formik.errors.email ? <p>{formik.errors.email}</p>
+                                                                    :
+                                                                    null
+                                                            }
                                                         </FormGroup>
                                                         :
                                                         null
@@ -89,11 +125,11 @@ function Login(props) {
                                                     (userType === "Login" || userType === "Signup") &&
                                                     <>
                                                         <FormGroup>
-                                                            <label htmlFor="exampleEmail">
+                                                            <Label htmlFor="exampleEmail">
                                                                 Email
-                                                            </label>
+                                                            </Label>
                                                             <br></br>
-                                                            <input id="exampleEmail" className="mail_bt_contact" name="email" placeholder="with a placeholder" type="email"  onChange={formik.handleChange}/>
+                                                            <Input id="exampleEmail" className="mail_bt_contact" name="email" placeholder="with a placeholder" type="email" onChange={formik.handleChange} />
                                                             {
                                                                 formik.errors.email ? <p>{formik.errors.email}</p>
                                                                     :
@@ -102,11 +138,17 @@ function Login(props) {
                                                         </FormGroup>
                                                         {/* <br></br> */}
                                                         <FormGroup>
-                                                            <label htmlFor="examplePassword">
+                                                            <Label htmlFor="examplePassword">
                                                                 Password
-                                                            </label>
+                                                            </Label>
                                                             <br></br>
-                                                            <input id="examplePassword" class="mail_bt_contact" name="password" placeholder="password placeholder" type="password" />
+                                                            <Input id="examplePassword" className="mail_bt_contact" name="password" placeholder="password placeholder" type="password"
+                                                                onChange={formik.handleChange} />
+                                                            {
+                                                                formik.errors.password ? <p>{formik.errors.password}</p>
+                                                                    :
+                                                                    null
+                                                            }
                                                         </FormGroup>
                                                     </>
                                                 }
@@ -115,21 +157,30 @@ function Login(props) {
                                         <div>
                                             {
                                                 userType === "Login" ?
-                                                    <>
-                                                        <Button color="primary" type="submit" className="mt-4">Login</Button>
-                                                        <Button color="primary" type="submit" className="mt-4" onClick={() => setuserType("Signup")}>Sign Up</Button>
-                                                    </>
+                                                    <div className='text-center'>
+                                                        <Button style={{margin:"10px auto 0" }} color="primary" type="submit" className="d-block">Login</Button>
+                                                    
+                                                        <a style={{cursor:"pointer" }} className="mt-4 d-inline-bloc" onClick={() => setuserType("Forgotpass")}>Forgot password ? </a>                                                        
+
+                                                        <Button style={{margin:"10px auto 0" }} color="primary" type="submit" className="d-block" onClick={() => setuserType("Signup")}>Sign Up</Button>
+                                                    </div>
                                                     :
-                                                    <>
-                                                        <Button color="primary" type="submit" className="mt-4">Sign Up</Button>
+                                                    <div>
+
+                                                        <Button color="primary" type="submit" className="mt-4">
+                                                            {userType === "Signup" ?
+                                                            "Sign Up"
+                                                            :
+                                                            "Send OTP"
+                                                        }
+                                                            </Button>
                                                         <Button color="primary" type="submit" className="mt-4" onClick={() => setuserType("Login")}>Login</Button>
-                                                    </>
+                                                    </div>
                                             }
                                         </div>
                                     </div>
                                     <div className="col-3"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

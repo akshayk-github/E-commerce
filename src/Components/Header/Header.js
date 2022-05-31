@@ -2,6 +2,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Header(props) {
+
+    // const OpenMenu = () => {
+    //     document.getElementById("mySidenav").style.width = "250px";
+    // }
+
+    // const CloseMenu = () => {
+    //     document.getElementById("mySidenav").style.width = "0";
+    // }
     return (
         
         <>
@@ -41,7 +49,7 @@ function Header(props) {
                 <div className="container">
                     <div className="containt_main">
                         <div id="mySidenav" className="sidenav">
-                            <a href="javascript:void(0)" className="closebtn" >×</a>
+                            <a href="javascript:void(0)" className="closebtn">×</a>
                             {/* <a href="index.html">Home</a> */}
                             <NavLink to={"/"}>Home</NavLink>
 
@@ -58,7 +66,7 @@ function Header(props) {
                             <NavLink to={"/Login"}>Login</NavLink>
 
                         </div>
-                        <span className="toggle_icon" >
+                        <span className="toggle_icon">
                             <img src="/assets/images/toggle-icon.png" />
                         </span>
                         <div className="dropdown">
